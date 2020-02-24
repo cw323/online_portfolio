@@ -1,93 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/caa5ae4c45.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/main.css" />
-    <title>View My Work</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/caa5ae4c45.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <title>View My Work</title>
+  <link rel="icon" href="img/portrait_icon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
       </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            About
+          </a>
+        </li>
+        <li class="nav-item current">
+          <a href="work.html" class="nav-link">
+            Work
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">
-              About Me
-            </a>
-          </li>
-          <li class="nav-item current">
-            <a href="work.html" class="nav-link">
-              My Work
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              How To Reach Me
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="work">
-      <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
-      <h2 class="sm-heading">
+  <main id="work">
+    <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
+    <!-- <h2 class="sm-heading">
         Check out some of my projects...
-      </h2>
-      <div class="projects">
-        <div class="item">
-          <a href="#!">
-            <img src="img/projects/project1.jpg" alt="Project" />
-          </a>
-          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
-          <a href="#" class="btn-dark">
-            <i class="fab fa-github"></i> Github
-          </a>
-        </div>
-        <div class="item">
-          <a href="#!">
-            <img src="img/projects/project2.jpg" alt="Project" />
-          </a>
-          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
-          <a href="#" class="btn-dark">
-            <i class="fab fa-github"></i> Github
-          </a>
-        </div>
-        <div class="item">
-          <a href="#!">
-            <img src="img/projects/project3.jpg" alt="Project" />
-          </a>
-          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
-          <a href="#" class="btn-dark">
-            <i class="fab fa-github"></i> Github
-          </a>
+      </h2> -->
+    <div class="projects">
+      <div class="item">
+        <a target="_blank" href="https://github.com/O2znz/reviews">
+          <video width="100%" height="auto" controls autoplay loop muted alt="Project">
+            <source src="img/projects/O2znz_reviews.mp4" type="video/mp4">
+            </source>
+          </video>
+        </a>
+        <!-- <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a> -->
+        <a target="_blank" href="https://github.com/O2znz/reviews" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+        <div class="job job-1">
+          <h3 class="text-secondary">O2znz | Reviews List Design</h3>
+          <br /><b>Frontend Software Engineer</b>
+          <br />
+          <p>
+            Reviews list microservice frontend design for a lodging
+            web app. Supports filtering based on terms
+            searched.
+          </p>
+          <p>
+            Built with MongoDB, Express, React, and Node.js.
+          </p>
         </div>
       </div>
-    </main>
 
-    <footer id="main-footer">
-      Copyright &copy; 2020
-    </footer>
+      <div class="item">
+        <a target="_blank" href="https://github.com/BNB-DDRC/photo-gallery">
+          <img height="181" src="img/projects/backend.png" alt="Project" />
+        </a>
+        <!-- <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a> -->
+        <a target="_blank" href="https://github.com/BNB-DDRC/photo-gallery" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+        <div class="job job-2">
+          <h3 class="text-secondary">DDRC | Photo Gallery Backend Infrastructure Scaling</h3>
+          <br /><b>Backend Software Engineer</b>
+          <br />
+          <p>
+            Photo gallery microservice backend design for a
+            lodging web app. Supports interactive gallery.
+          </p>
+          <p>
+            Built with Cassandra, Express, React, Node.js.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <a target="_blank" href="https://github.com/cw323/fungry">
+          <video width="100%" height="auto" controls autoplay loop muted alt="Project">
+            <source src="img/projects/Fungry.mp4" type="video/mp4">
+            </source>
+          </video>
+        </a>
+        <!-- <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a> -->
+        <a target="_blank" href="https://github.com/cw323/fungry" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+        <div class="job job-3">
+          <h3 class="text-secondary">Fungry | Food Item Rating</h3>
+          <br /><b>Full Stack Software Engineer</b>
+          <br />
+          <p>
+            Food item review list web app. Utilizes Google Places API to search for establishments.
+          </p>
+          <p>
+            Built with MongoDB, Express, React, Node.js.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <script src="js/main.js"></script>
-  </body>
+  <footer id="main-footer">
+    Copyright &copy; 2020
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
