@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Responsive portfolio website",
   "main": "index.js",
-  "homepage": "https://cw323.github.io/online_portfolio",
+  "homepage": "https://candywang.dev",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
